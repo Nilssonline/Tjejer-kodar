@@ -1,0 +1,131 @@
+/* Styling för hela sidan */
+body {
+  margin: 0;
+  font-family: 'Source Code Pro', monospace;
+}
+.header-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  text-transform: uppercase;
+}
+.header-content p{
+  font-size: 190px;
+  font-family: 'Libre Franklin', sans-serif;
+  text-shadow: 0 10px 10px #7d7d7d;
+  
+}
+.header-content a{
+  padding: 30px;
+  margin: 20px;
+  background: #f2f2f2f2;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0px 10px 10px #000000;
+}
+.header-content a:active{
+box-shadow: 0 5px #333;
+  transform: translateY(4px);
+}
+.header{
+  text-align: center;
+  background: linear-gradient(45deg,#f2f2f2,#a5a5a5, #727272, #3d3d3d);
+  background-size: 600%;
+  animation-name: headerBackground;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ 
+
+ 
+}
+@keyframes headerBackground{
+  from {
+    background-position:0%;
+  }
+  to{
+    background-position:100%;
+  }
+
+}
+.content{
+  margin:10%;
+}
+
+/* Styling för texter och länkar */
+h1 {
+  font-size: 70px;
+  text-align: center;
+  /*max-width: 800px;*/
+}
+
+h2 {
+  font-size: 15px;
+}
+
+a {
+  color: #808080;
+  margin: 10px;
+  display: block;
+}
+a:hover{
+  color:#000000 ;
+}
+
+/* Styling för alla produkter – dessa är children till
+sektionen med klassnamnet all-products */
+.all-products> a {
+  border: solid #d8d8d891 3px;
+  margin: 10px;
+  padding: 0;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  text-decoration: none;;
+}
+.product h2{
+  padding:10px;
+}
+.product:hover img, .product:hover h2{
+  opacity: 0.5;
+  color: #0000007d;
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Sektionen .all-products är parent till div-arna med
+klassnamn .product. Den styr därmed hur alla produkterna
+ska vara placerade.
+Hint! Googla "flex-wrap".*/
+
+.all-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+footer{
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+.footer-content{
+  flex-direction: column;
+  width: 700px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  border-top: 1px solid #e9e9e9;
+}
+
+
