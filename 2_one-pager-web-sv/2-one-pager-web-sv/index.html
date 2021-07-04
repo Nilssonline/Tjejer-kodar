@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<!-- Yay! Idag bygger vi en företagssite. Här är två saker som kan
+  vara bra att veta innan du börjar.
+  
+  1. Vi använder en klass som heter container på alla sektioner på
+  den här sidan. Den styr själva grundstrukturen, t.ex. hur bred varje
+  sektion är, hur texten ska vara formatterad m.m. Helt enkelt styling
+  som ska gälla för alla sektioner.
+  
+  2. Vi använder en bakgrundsbild till toppen av sidan. Det är ett vanlig
+  metod för att få text ovanpå en bild. Det som är lite annorlunda med denna
+  metod är att bilden läggs in i CSS-filen och inte i HTML-filen, precis som
+  om du hade gjort en bakgrundsfärg. Ta en titt i CSS-filen efter
+  background-image så ser du hur det är kopplat!
+
+      Lycka till! -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/65aaea24c5.js" crossorigin="anonymous"></script>
+    
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    <!--Google fonts by link-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Sjöstadens kroppsvård</title>
+  </head>
+
+  <body>
+
+    <!-- Här finns all HTML-kod som har med toppen på sidan att göra. Kom
+      ihåg att du hittar bilden i CSS-filen -->
+    <header>
+      <div class="container">
+        <h1>
+          Sjöstadens kroppsvård
+        </h1>
+        <a href="#" class="button">Boka tid idag!</a>
+      </div>
+    </header>
+
+    <!-- Här finns all HTML-kod som har med de tre ikonerna att göra -->
+    <section class="what-we-do">
+      <div class="container">
+        <h2>Det här är vi</h2>
+
+        <div class="icons">
+          <a href="#vara-vaxter">
+          <div class="icon">
+            <img src="./images/icon1.svg" />
+            <h3>Våra växter</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+        </a>
+        <a href="#var-filosofi">
+          <div class="icon">
+            <img src="./images/icon2.svg" />
+            <h3>Vår filosofi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          </a>
+          <a href="#vara-tjanster">
+          <div class="icon">
+            <img src="./images/icon3.svg" />
+            <h3>Våra tjänster</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Här finns all HTML-kod som har med "about us"-sektionen att göra -->
+    <section class="about-us vara-vaxter">
+      <div class="container">
+        <h2 id="vara-vaxter">Våra växter</h2>
+        <p>
+          Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#">Read more</a>
+      </div>
+    </section>
+    <section class="about-us var-filosofi">
+      <div class="container">
+        <h2 id="var-filosofi">Vår filosofi</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          e
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#">Read more</a>
+      </div>
+    </section>
+    <section class="about-us vara-tjanster">
+      <div class="container">
+        <h2 id="vara-tjanster">Våra tjänster</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <a href="#">Read more</a>
+      </div>
+    </section>
+
+    <!-- Här kan du lägga till kod om du vill fylla i något i footern -->
+    <footer>
+      <div class="container">
+        <!--Fiktiv verksamhet, har inget nyhetsbrev att länka till-->
+        <div class="footer-section section-1">
+        <a href="#" class="button">Prenumerera på nyhetsbrev!</a>
+        <p>Prenumerera på vårat nyhetsbrev för att få direkt uppdatering från alla våra nya tjänster och produkter!</p>
+      </div>
+        <div class="footer-section section-2">
+          <a href="https://www.linkedin.com/in/line-nilsson-a480a188/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/line.nilsson.140"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nilssonline/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+    </footer>
+  </body>
+</html>

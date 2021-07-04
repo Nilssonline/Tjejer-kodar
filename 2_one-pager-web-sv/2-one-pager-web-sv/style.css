@@ -1,0 +1,172 @@
+/* 
+I det här dokumentet hittar du all styling för det här projektet. 
+Det är en hel del CSS som du inte har lärt dig ännu. Bland annat
+använder vi något som heter flexbox eller display: flex för att
+skapa själva layouten. Det behöver du inte bry dig om idag – det
+tar vi i morgon!
+*/
+
+/*****Table of content****
+  Import
+  General
+  Text
+  Header and footer
+  what we do
+  Icons
+  about us
+
+
+****/
+/****Import****/
+  @import url(https://fonts.googleapis.com/css?family=Nunito);
+  @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+/**** General*****/
+  body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  text-align: center;
+  }
+  .container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0 140px;
+  }
+
+  /**Text**/
+  h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 700;
+    margin: 40px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+  }
+
+  h2 {
+    font-size: 50px;
+    font-family: 'Poiret One', cursive;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+  }
+  a{
+    color: #9f9db3;
+  }
+  a:not(.button):hover{
+    color: #504d58;
+  }
+
+  /**Header and footer**/
+  header {
+    /* En ny grej är att vi nu lägger in bilden i CSS
+    som en bakgrund, här redigerar du den. */
+    background-image: url("./images/cropped-cropped-purplef.jpg");
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    /* Styr bilden */
+    background-size: cover;
+    /* Styr bilden */
+    padding: 100px 0;
+  }
+  header .container{
+    /*background: #ffffff2e;
+    border-radius: 214px;*/
+  }
+
+  /* Styling för knappen */
+  header a, footer a.button {
+    color: white;
+    border: #9f9db3 solid;
+    background: #51853ca8;
+    margin-bottom: 20px;
+
+    /* Gör att knappen får runda hörn */
+    border-radius: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    display: inline-block;
+  }
+  header a:hover, footer a.button:hover{
+    background:#a5cc95a8;
+  }
+  footer {
+  background-color:#504d58 ;
+  color: white;
+  }
+  footer p{
+    font-size: 15px;
+  }
+  footer .footer-section.section-2 a:hover{
+    color: #a5cc95a8;
+  }
+  .footer-section.section-2{
+    float: left;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+
+/****What we do*****/
+  section.what-we-do{
+  background-color: #fdf3e1;
+  }
+  /**Icons**/
+  .icons {
+    /* Gör att dom lägger sig brevid varandra – men mer om detta i morgon. */
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+  .icons a{
+    text-decoration: none;
+    color: inherit;
+
+  }
+  .icon h3{
+    font-family:'Poiret One', cursive;
+    font-size: 35px;
+  }
+
+  .icon {
+    background: #e0e6deb0;
+    margin: 40px;
+    border: 4px solid #9f9db3;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgb(199, 199, 199, 0.6);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+ 
+  .icon:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .icon img {
+    width: 150px;
+  }
+
+/****about-us****/
+  .about-us {
+  background-color: #fdf3e1;
+  }
+  .about-us .container{
+    border-top: 1px solid #9f9db3;
+    width: 55%;
+  }
+
