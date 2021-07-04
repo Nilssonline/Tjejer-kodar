@@ -1,0 +1,126 @@
+/*
+I det här dokumentet hittar du all styling för det här projektet,
+i morgon ska vi lära oss att skriva CSS.
+*/
+
+/* Här är styling som gäller för hela sidan */
+
+body {
+  box-sizing: border-box;
+  font-family: Helvetica, "sans serif";
+  color: #ff726c;
+  margin: 0;
+}
+
+/* Här finns all styling för knappen */
+.button {
+  background-color: #ff4a56;
+  border:solid 4px #ffc77c;
+  color: #ffffff;
+  padding: 25px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+.button:hover{
+  background-color: #ff4a56b8;
+  border: solid 4px #ffe1b9;
+}
+
+/* Här är styling som gäller för alla rubriker och texter */
+h1 {
+  margin: 20px;
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+}
+
+/* Här är styling för about-me sektionen */
+.about-me {
+  background: rgb(255,0,24);
+  background: linear-gradient(90deg, rgba(255,0,24,0.7315519957983193) 0%, rgba(255,165,44,0.8351934523809523) 35%);
+  padding: 150px 30px;
+  color: white;
+  text-align: center;
+}
+
+/* Här är styling för bilden som ligger i about-me sektionen */
+.about-me img {
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Här är styling för greatness sektionen */
+/*.greatness {
+  padding: 150px 30px;
+  width: 60%;
+  margin: 0 auto;
+}*/
+.greatness {
+  padding: 150px 100px;
+  margin: 0 auto;
+  flex: 0 0 40%;
+  flex-direction: column;
+  margin-right: 2.75%;
+  
+}
+.width-100{
+  width: 100%;
+  display: flex;
+  
+}
+.column-1{
+  text-align: center;
+}
+.info-box-round{
+  background: #ff4a56;
+  border-radius: 5px 20px 5px;
+  padding: 20px 30px 50px;
+  margin: auto;
+  max-width: 650px;
+  color: #ffffff;
+}
+/* Här är styling för footern på sidan */
+footer{
+  background-color: #ff7253;
+  padding: 150px 300px;
+  
+}
+footer, footer p, footer a {
+color: #ffffff;
+}
+footer a:hover{
+  color: #ffe1b9;
+}
+.footer-link-div{
+  overflow: hidden;
+}
+.footer-link-div p{
+  display: inline-block;
+  margin-left: 11px;
+}
+.fa-envelope:before, .fa-phone-alt:before{
+  font-size: 25px;
+}
+.fotter-section.section-2{
+  float: right;
+  font-size: 35px;
+}
